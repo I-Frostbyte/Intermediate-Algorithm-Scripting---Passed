@@ -14,7 +14,9 @@ Note: Preserve the case of the first character in the original word when you are
 */
 
 function myReplace(str, before, after) {
-    return str;
+    return str
+              .replace(/before/g, after)
+    ;
 }
 
 module.exports = myReplace;
