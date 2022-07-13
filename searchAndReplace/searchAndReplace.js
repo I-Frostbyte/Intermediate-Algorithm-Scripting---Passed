@@ -14,17 +14,13 @@ Note: Preserve the case of the first character in the original word when you are
 */
 
 function myReplace(str, before, after) {
-  // Find index where before is on string
   var index = str.indexOf(before);
-  // Check to see if the first letter is uppercase or not
+  
   if (str[index] === str[index].toUpperCase()) {
-    // Change the after word to be capitalized before we use it.
     after = after.charAt(0).toUpperCase() + after.slice(1);
   } else {
-    // Change the after word to be uncapitalized before we use it.
     after = after.charAt(0).toLowerCase() + after.slice(1);
   }
-  // Now replace the original str with the edited one.
   str = str.replace(before, after);
 
   return str;
@@ -40,10 +36,60 @@ module.exports = myReplace;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 /* MINE OWN FAILED
 return str
               .replace(before, after)
     ;
+*/
+
+/* THE ONE THAT WORKED IN THE END - WITH HELP FROM FREECODECAMP
+// Find index where before is on string
+  var index = str.indexOf(before);
+  // Check to see if the first letter is uppercase or not
+  if (str[index] === str[index].toUpperCase()) {
+    // Change the after word to be capitalized before we use it.
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  } else {
+    // Change the after word to be uncapitalized before we use it.
+    after = after.charAt(0).toLowerCase() + after.slice(1);
+  }
+  // Now replace the original str with the edited one.
+  str = str.replace(before, after);
+
+  return str;
 */
 
 /* MORE MY SPEED FROM FREECODECAMP
